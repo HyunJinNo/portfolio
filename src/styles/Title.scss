@@ -1,0 +1,29 @@
+.Title {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+
+  > .position {
+    margin: 2rem;
+    border-top: 3px solid white;
+    h2 {
+      color: white;
+      text-align: start;
+    }
+  }
+
+  > .titleGroup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    > .titleText {
+      margin: 2rem;
+      > h1 {
+        font-size: 8vw;
+        color: white;
+        text-align: end;
+      }
+    }
+  }
+}

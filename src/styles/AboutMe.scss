@@ -1,0 +1,12 @@
+.AboutMe {
+  margin-top: 300px;
+  width: auto;
+  height: 100vh;
+  display: flex;
+
+  > h1 {
+    padding: 2rem;
+    font-size: 4rem;
+    color: white;
+  }
+}
