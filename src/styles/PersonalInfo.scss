@@ -1,0 +1,31 @@
+.PersonalInfo {
+  margin-top: 10vw;
+  width: auto;
+  height: 50vw;
+
+  > .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 10vw;
+
+    > h1 {
+      margin-left: 1vw;
+      font-size: 4vw;
+    }
+  }
+
+  > .content {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    height: 35vw;
+
+    > .verticalContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}
