@@ -36,7 +36,7 @@ const badges_frontend = [
   },
 ];
 
-const badges: readonly { src: string; alt: string; width: number }[] = [
+const badges_mobile = [
   {
     src: "https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white",
     alt: "ANDROID",
@@ -62,6 +62,9 @@ const badges: readonly { src: string; alt: string; width: number }[] = [
     alt: "DART",
     width: 79,
   },
+];
+
+const badges_backend = [
   {
     src: "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=FFFFFF",
     alt: "PYTHON",
@@ -92,6 +95,9 @@ const badges: readonly { src: string; alt: string; width: number }[] = [
     alt: "FIREBASE",
     width: 109,
   },
+];
+
+const badges_version_control = [
   {
     src: "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white",
     alt: "GIT",
@@ -103,5 +109,12 @@ const badges: readonly { src: string; alt: string; width: number }[] = [
     width: 95.5,
   },
 ];
+
+const badges = {
+  badges_frontend: badges_frontend,
+  badges_backend: badges_backend,
+  badges_mobile: badges_mobile,
+  badges_version_control: badges_version_control,
+};
 
 export default badges;

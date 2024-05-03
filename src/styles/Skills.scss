@@ -1,14 +1,53 @@
 .Skills {
-  background-color: rgba(255, 255, 255, 0.5);
-  margin-top: 10px;
-
+  margin-top: 10vw;
   width: auto;
   height: 100vh;
-  display: flex;
 
-  > h2 {
+  > .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 2rem;
-    font-size: 4vw;
+    height: 10vw;
+
+    > h1 {
+      margin-left: 1vw;
+      font-size: 4vw;
+    }
+  }
+
+  h2 {
+    color: white;
+    margin-top: 2vw;
+    margin-left: 1vw;
+  }
+
+  > .cardViewGroup {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+
+    > .cardView {
+      margin: 1vw;
+      padding: 1vw;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      animation-name: example;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes example {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-100vw);
   }
 }

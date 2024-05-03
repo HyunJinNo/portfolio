@@ -10,6 +10,31 @@ const nextConfig = {
         port: "",
         pathname: "/badge/**",
       },
+      {
+        // rsc="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg"
+        protocol: "https",
+        hostname: "www.w3.org",
+        port: "",
+        pathname: "/html/**",
+      },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+        port: "",
+        pathname: "/wikipedia/**",
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+        pathname: "/voodootikigod/**",
+      },
+      {
+        protocol: "https",
+        hostname: "sass-lang.com",
+        port: "",
+        pathname: "/assets/**",
+      },
     ],
   },
 };
