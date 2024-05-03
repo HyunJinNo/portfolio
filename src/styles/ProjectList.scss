@@ -1,0 +1,21 @@
+.ProjectList {
+  margin-top: 10vw;
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > .title {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 10vw;
+
+    > h1 {
+      margin-left: 1vw;
+      font-size: 4vw;
+    }
+  }
+}

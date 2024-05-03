@@ -8,8 +8,10 @@ const Wallpaper = () => {
       src="/space_wallpaper.jpg"
       alt="wallpaper"
       fill={true}
-      objectFit="cover"
-      objectPosition="center"
+      style={{
+        objectFit: "cover",
+        objectPosition: "center",
+      }}
     />
   );
 };

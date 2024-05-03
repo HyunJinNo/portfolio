@@ -10,7 +10,6 @@ const Skills = () => {
         <FaBook size={"3vw"} />
         <h1>My Skills</h1>
       </div>
-
       <div className="category" data-aos="flip-down">
         <h2>Front-end</h2>
         <div className="cardViewGroup">
