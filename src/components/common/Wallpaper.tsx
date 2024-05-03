@@ -1,14 +1,16 @@
 import "@/styles/Wallpaper.scss";
+import Image from "next/image";
 
-type MyProps = {
-  children?: React.ReactNode;
-};
-
-const Wallpaper = ({ children }: MyProps) => {
+const Wallpaper = () => {
   return (
-    <div className="Wallpaper">
-      <div>{children}</div>
-    </div>
+    <Image
+      className="Wallpaper"
+      src="/space_wallpaper.jpg"
+      alt="wallpaper"
+      fill={true}
+      objectFit="cover"
+      objectPosition="center"
+    />
   );
 };
 
