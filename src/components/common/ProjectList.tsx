@@ -1,6 +1,7 @@
 import "@/styles/ProjectList.scss";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import ProjectItem from "./ProjectItem";
+import projects from "@/constants/projects";
 
 const ProjectList = () => {
   return (
@@ -9,7 +10,9 @@ const ProjectList = () => {
         <PiProjectorScreenChart size={"3vw"} />
         <h1>Projects</h1>
       </div>
-      <ProjectItem title="Friendly Keyboard" body="body" />
+      {projects.map((project) => (
+        <ProjectItem key={project.title} project={project} />
+      ))}
     </div>
   );
 };

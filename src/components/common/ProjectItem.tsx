@@ -1,17 +1,31 @@
 import "@/styles/ProjectItem.scss";
+import { FaCheck } from "react-icons/fa";
 
 type MyProps = {
-  title: string;
-  body: string;
+  project: any;
 };
 
-const ProjectItem = ({ title, body }: MyProps) => {
+const ProjectItem = ({ project }: MyProps) => {
+  const keys = Object.keys(project);
+
   return (
-    <div className="ProjectItem">
-      <h2>{title}</h2>
+    <div className="ProjectItem" data-aos="slide-left">
+      <h2>{project.title}</h2>
       <div className="content">
-        <div>Image</div>
-        <p>{body}</p>
+        <div className="image">Image</div>
+        <div className="infos">
+          <div className="info">
+            {keys.map((key: string) => (
+              <div className="body" key={key}>
+                <div className="tag">
+                  <FaCheck size={"1vw"} />
+                  <h4>{`${key}`}</h4>
+                </div>
+                <p>{project[key]}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

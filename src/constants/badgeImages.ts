@@ -73,12 +73,12 @@ const BADGE_IMAGES_MOBILE = [
   {
     src: "/Android_2023_3D_logo_and_wordmark.svg.png",
     alt: "ANDROID",
-    width: 250,
+    width: 300,
   },
   {
     src: "/Kotlin_logo_2021.svg.png",
     alt: "KOTLIN",
-    width: 250,
+    width: 300,
   },
   {
     src: "/Java_programming_language_logo.svg.png",
