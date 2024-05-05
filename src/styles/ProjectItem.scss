@@ -1,11 +1,12 @@
 .ProjectItem {
   background-color: rgba(0, 0, 0, 0.2);
-  width: 80vw;
+  width: fit-content;
   height: fit-content;
   color: white;
   margin: 1vw;
   padding: 2vw;
   border-radius: 8px;
+  border: 1px solid white;
 
   h2 {
     text-align: center;

@@ -19,4 +19,12 @@
       font-size: 4vw;
     }
   }
+
+  .list {
+    display: flex;
+    overflow-x: hidden;
+    width: 100vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
