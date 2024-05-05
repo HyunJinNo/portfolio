@@ -12,9 +12,6 @@ const ProjectList = () => {
   // element를 드래그하고 있는지 여부 확인
   const [isDragging, setIsDragging] = useState<boolean>(false);
 
-  // 드래그 시작 시점의 X축 좌표값
-  const [startX, setStartX] = useState<number>(0);
-
   // 드래그 시작 시점의 스크롤 포지션이 포함된 X축 좌표값
   const [totalX, setTotalX] = useState<number>(0);
 
@@ -22,8 +19,8 @@ const ProjectList = () => {
     e.preventDefault();
     e.stopPropagation();
     setIsDragging(true);
+
     const x = e.clientX;
-    setStartX(x);
     if (listRef.current && "scrollLeft" in listRef.current) {
       setTotalX(x + listRef.current.scrollLeft);
     }
@@ -59,7 +56,7 @@ const ProjectList = () => {
 
   return (
     <div className="ProjectList">
-      <div className="title" data-aos="fade-right" data-aos-offset="200">
+      <div className="title" data-aos="flip-right" data-aos-offset="200">
         <PiProjectorScreenChart size={"3vw"} />
         <h1>Projects</h1>
       </div>
