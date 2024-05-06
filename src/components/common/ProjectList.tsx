@@ -1,7 +1,7 @@
 "use client";
 
 import "@/styles/ProjectList.scss";
-import { PiProjectorScreenChart } from "react-icons/pi";
+import { AiOutlineProject } from "react-icons/ai";
 import ProjectItem from "./ProjectItem";
 import projects from "@/constants/projects";
 import { MouseEvent, useRef, useState } from "react";
@@ -57,7 +57,7 @@ const ProjectList = () => {
   return (
     <div className="ProjectList">
       <div className="title" data-aos="flip-right" data-aos-offset="200">
-        <PiProjectorScreenChart size={"3vw"} />
+        <AiOutlineProject size={"3vw"} />
         <h1>Projects</h1>
       </div>
       <div

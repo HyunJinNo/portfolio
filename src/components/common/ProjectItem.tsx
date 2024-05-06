@@ -51,23 +51,44 @@ const ProjectItem = ({ project }: MyProps) => {
         </div>
         <div className="bottom">
           <div className="info">
-            {keys.map((key: string) => (
-              <div className="body" key={key}>
-                <div className="tag">
-                  <FaCheck size={"1vw"} />
-                  <h4>{`${key}`}</h4>
+            {keys.map((key: string) => {
+              if (key === "github") {
+                return (
+                  <a
+                    className="body"
+                    key={key}
+                    href={project[key]}
+                    target="_blank"
+                  >
+                    <div className="tag">
+                      <FaCheck size={"1vw"} />
+                      <h4>{`${key}`}</h4>
+                    </div>
+                    <div className="str">
+                      <p>{project[key]}</p>
+                    </div>
+                  </a>
+                );
+              }
+
+              return (
+                <div className="body" key={key}>
+                  <div className="tag">
+                    <FaCheck size={"1vw"} />
+                    <h4>{`${key}`}</h4>
+                  </div>
+                  <div className="str">
+                    {Array.isArray(project[key]) ? (
+                      project[key].map((str: string, index: number) => (
+                        <p key={index}>{str}</p>
+                      ))
+                    ) : (
+                      <p>{project[key]}</p>
+                    )}
+                  </div>
                 </div>
-                <div className="str">
-                  {Array.isArray(project[key]) ? (
-                    project[key].map((str: string, index: number) => (
-                      <p key={index}>{str}</p>
-                    ))
-                  ) : (
-                    <p>{project[key]}</p>
-                  )}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
