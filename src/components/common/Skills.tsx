@@ -1,4 +1,4 @@
-import BADGE_IMAGES from "@/constants/badgeImages";
+import IMAGES_SKILLS from "@/constants/IMAGES_SKILLS";
 import "@/styles/Skills.scss";
 import Image from "next/image";
 import { FaBook } from "react-icons/fa";
@@ -13,7 +13,7 @@ const Skills = () => {
       <div className="category" data-aos="flip-down">
         <h2>Front-end</h2>
         <div className="cardViewGroup">
-          {BADGE_IMAGES.frontend.map((value) => (
+          {IMAGES_SKILLS.frontend.map((value) => (
             <Image
               className="cardView"
               key={value.alt}
@@ -28,7 +28,7 @@ const Skills = () => {
       <div className="category" data-aos="flip-down">
         <h2>Back-end</h2>
         <div className="cardViewGroup">
-          {BADGE_IMAGES.backend.map((value) => (
+          {IMAGES_SKILLS.backend.map((value) => (
             <Image
               className="cardView"
               key={value.alt}
@@ -43,7 +43,22 @@ const Skills = () => {
       <div className="category" data-aos="flip-down">
         <h2>Mobile</h2>
         <div className="cardViewGroup">
-          {BADGE_IMAGES.mobile.map((value) => (
+          {IMAGES_SKILLS.mobile.map((value) => (
+            <Image
+              className="cardView"
+              key={value.alt}
+              src={value.src}
+              alt={value.src}
+              width={value.width}
+              height={100}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="category" data-aos="flip-down">
+        <h2>Deployment</h2>
+        <div className="cardViewGroup">
+          {IMAGES_SKILLS.deployment.map((value) => (
             <Image
               className="cardView"
               key={value.alt}
@@ -58,7 +73,7 @@ const Skills = () => {
       <div className="category" data-aos="flip-down">
         <h2>Version Control</h2>
         <div className="cardViewGroup">
-          {BADGE_IMAGES.versionControl.map((value) => (
+          {IMAGES_SKILLS.versionControl.map((value) => (
             <Image
               className="cardView"
               key={value.alt}

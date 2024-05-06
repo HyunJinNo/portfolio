@@ -1,4 +1,4 @@
-const BADGE_IMAGES_FRONTEND = [
+const IMAGES_FRONTEND = [
   {
     src: "/HTML5_Logo.svg",
     alt: "HTML5",
@@ -34,9 +34,24 @@ const BADGE_IMAGES_FRONTEND = [
     alt: "NEXT.JS",
     width: 200,
   },
+  {
+    src: "/Redux_Logo.png",
+    alt: "REDUX",
+    width: 200,
+  },
 ];
 
-const BADGE_IMAGES_BACKEND = [
+const IMAGES_BACKEND = [
+  {
+    src: "/Node.js_logo.svg.png",
+    alt: "NODE.JS",
+    width: 150,
+  },
+  {
+    src: "/Expressjs.png",
+    alt: "EXPRESS.JS",
+    width: 200,
+  },
   {
     src: "/Python-logo-notext.svg.png",
     alt: "PYTHON",
@@ -46,11 +61,6 @@ const BADGE_IMAGES_BACKEND = [
     src: "/Flask_logo.svg.png",
     alt: "FLASK",
     width: 200,
-  },
-  {
-    src: "/Raspberry_Pi_Logo.svg.png",
-    alt: "RASPBERRY PI",
-    width: 100,
   },
   {
     src: "/MySQL_logo.svg.png",
@@ -69,7 +79,7 @@ const BADGE_IMAGES_BACKEND = [
   },
 ];
 
-const BADGE_IMAGES_MOBILE = [
+const IMAGES_MOBILE = [
   {
     src: "/Android_2023_3D_logo_and_wordmark.svg.png",
     alt: "ANDROID",
@@ -97,7 +107,25 @@ const BADGE_IMAGES_MOBILE = [
   },
 ];
 
-const BADGE_IMAGES_VERSION_CONTROL = [
+const IMAGES_DEPLOYMENT = [
+  {
+    src: "/Raspberry_Pi_Logo.svg.png",
+    alt: "RASPBERRY PI",
+    width: 100,
+  },
+  {
+    src: "/Amazon_Web_Services_Logo.svg.png",
+    alt: "AWS",
+    width: 150,
+  },
+  {
+    src: "/vercel.svg",
+    alt: "VERCEL",
+    width: 200,
+  },
+];
+
+const IMAGES_VERSION_CONTROL = [
   {
     src: "/Git-logo.svg.png",
     alt: "GIT",
@@ -110,11 +138,12 @@ const BADGE_IMAGES_VERSION_CONTROL = [
   },
 ];
 
-const BADGE_IMAGES = {
-  frontend: BADGE_IMAGES_FRONTEND,
-  backend: BADGE_IMAGES_BACKEND,
-  mobile: BADGE_IMAGES_MOBILE,
-  versionControl: BADGE_IMAGES_VERSION_CONTROL,
+const IMAGES_SKILLS = {
+  frontend: IMAGES_FRONTEND,
+  backend: IMAGES_BACKEND,
+  mobile: IMAGES_MOBILE,
+  deployment: IMAGES_DEPLOYMENT,
+  versionControl: IMAGES_VERSION_CONTROL,
 };
 
-export default BADGE_IMAGES;
+export default IMAGES_SKILLS;

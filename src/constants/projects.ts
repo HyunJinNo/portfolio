@@ -111,12 +111,12 @@ const projects: readonly Project[] = [
   },
   {
     images: ["/portfolio/photo1.png"],
-    title: "portfolio",
+    title: "Portfolio",
     description: "Next.js로 구현한 웹 프론트엔드 포트폴리오",
-    members: "개인 프로젝트",
+    members: "1인 (개인 프로젝트)",
     period: "2024.05.02 ~ 2024.05.06",
     features: [
-      "간단한 자기소개",
+      "간단한 자기 소개",
       "인적 사항 소개",
       "사용해 본 Skill 목록 소개",
       "수행한 프로젝트 목록 소개",
