@@ -99,7 +99,7 @@ const projects: readonly Project[] = [
       "유저들의 랭킹을 확인할 수 있는 리더보드 기능",
       "십자말풀이 칸을 확인할 수 있는 힌트 기능",
     ],
-    github: "https://github.com/CAU-Design-Pattern",
+    github: "https://github.com/orgs/CAU-Design-Pattern/repositories",
     role: [
       "전체 UI 설계 및 구현",
       "게임 Logic 설계 및 구현",
@@ -114,7 +114,7 @@ const projects: readonly Project[] = [
     title: "Portfolio",
     description: "Next.js로 구현한 웹 프론트엔드 포트폴리오",
     members: "1인 (개인 프로젝트)",
-    period: "2024.05.02 ~ 2024.05.06",
+    period: "2024.05.02 ~ 2024.05.07",
     features: [
       "간단한 자기 소개",
       "인적 사항 소개",

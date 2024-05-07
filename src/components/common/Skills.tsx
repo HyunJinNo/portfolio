@@ -1,4 +1,4 @@
-import IMAGES_SKILLS from "@/constants/IMAGES_SKILLS";
+import { IMAGES_SKILLS, IMAGES_SKILLS_KEYS } from "@/constants/IMAGES_SKILLS";
 import "@/styles/Skills.scss";
 import Image from "next/image";
 import { FaBook } from "react-icons/fa";
@@ -10,81 +10,23 @@ const Skills = () => {
         <FaBook size={"3vw"} />
         <h1>My Skills</h1>
       </div>
-      <div className="category" data-aos="flip-down">
-        <h2>Front-end</h2>
-        <div className="cardViewGroup">
-          {IMAGES_SKILLS.frontend.map((value) => (
-            <Image
-              className="cardView"
-              key={value.alt}
-              src={value.src}
-              alt={value.src}
-              width={value.width}
-              height={100}
-            />
-          ))}
+      {IMAGES_SKILLS_KEYS.map((key: string) => (
+        <div key={key} className="category" data-aos="flip-down">
+          <h2>{key}</h2>
+          <div className="cardViewGroup">
+            {IMAGES_SKILLS.get(key)?.map((value) => (
+              <Image
+                className="cardView"
+                key={value.alt}
+                src={value.src}
+                alt={value.src}
+                width={value.width}
+                height={100}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="category" data-aos="flip-down">
-        <h2>Back-end</h2>
-        <div className="cardViewGroup">
-          {IMAGES_SKILLS.backend.map((value) => (
-            <Image
-              className="cardView"
-              key={value.alt}
-              src={value.src}
-              alt={value.src}
-              width={value.width}
-              height={100}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="category" data-aos="flip-down">
-        <h2>Mobile</h2>
-        <div className="cardViewGroup">
-          {IMAGES_SKILLS.mobile.map((value) => (
-            <Image
-              className="cardView"
-              key={value.alt}
-              src={value.src}
-              alt={value.src}
-              width={value.width}
-              height={100}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="category" data-aos="flip-down">
-        <h2>Deployment</h2>
-        <div className="cardViewGroup">
-          {IMAGES_SKILLS.deployment.map((value) => (
-            <Image
-              className="cardView"
-              key={value.alt}
-              src={value.src}
-              alt={value.src}
-              width={value.width}
-              height={100}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="category" data-aos="flip-down">
-        <h2>Version Control</h2>
-        <div className="cardViewGroup">
-          {IMAGES_SKILLS.versionControl.map((value) => (
-            <Image
-              className="cardView"
-              key={value.alt}
-              src={value.src}
-              alt={value.src}
-              width={value.width}
-              height={100}
-            />
-          ))}
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

@@ -62,6 +62,9 @@ const IMAGES_BACKEND = [
     alt: "FLASK",
     width: 200,
   },
+];
+
+const IMAGES_DATABASE = [
   {
     src: "/MySQL_logo.svg.png",
     alt: "MYSQL",
@@ -138,12 +141,22 @@ const IMAGES_VERSION_CONTROL = [
   },
 ];
 
-const IMAGES_SKILLS = {
-  frontend: IMAGES_FRONTEND,
-  backend: IMAGES_BACKEND,
-  mobile: IMAGES_MOBILE,
-  deployment: IMAGES_DEPLOYMENT,
-  versionControl: IMAGES_VERSION_CONTROL,
-};
+export const IMAGES_SKILLS = new Map<
+  string,
+  { src: string; alt: string; width: number }[]
+>();
+IMAGES_SKILLS.set("Front-end", IMAGES_FRONTEND);
+IMAGES_SKILLS.set("Back-end", IMAGES_BACKEND);
+IMAGES_SKILLS.set("Database", IMAGES_DATABASE);
+IMAGES_SKILLS.set("Mobile", IMAGES_MOBILE);
+IMAGES_SKILLS.set("Deployment", IMAGES_DEPLOYMENT);
+IMAGES_SKILLS.set("Version Control", IMAGES_VERSION_CONTROL);
 
-export default IMAGES_SKILLS;
+export const IMAGES_SKILLS_KEYS = [
+  "Front-end",
+  "Back-end",
+  "Database",
+  "Mobile",
+  "Deployment",
+  "Version Control",
+];
