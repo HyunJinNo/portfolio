@@ -122,14 +122,14 @@ const projects: readonly Project[] = [
       "수행한 프로젝트 목록 소개",
     ],
     github: "https://github.com/HyunJinNo/portfolio",
-    url: "작성 예정",
+    url: "https://portfolio-hyunjinno.vercel.app/",
     role: [
       "전체 UI 구현",
       "aos(Animate on scroll library)를 사용해 스크롤 애니메이션 적용",
       "좌우 스크롤 구현",
     ],
     frontend: "Next.js, TypeScript, Sass",
-    deployment: "작성 예정",
+    deployment: "Vercel",
   },
 ];
 
