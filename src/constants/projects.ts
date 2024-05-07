@@ -112,7 +112,8 @@ const projects: readonly Project[] = [
   {
     images: ["/portfolio/photo1.png"],
     title: "Portfolio",
-    description: "Next.js로 구현한 웹 프론트엔드 포트폴리오",
+    description:
+      "Next.js로 구현한 포트폴리오 용도 웹 사이트입니다. 정적인 웹 사이트 특성 상 SSR, SSG을 쉽게 적용할 수 있는 Next.js 프레임워크를 사용하여 웹 사이트를 구현하였습니다. Next.js에서 이미지를 자동으로 캐싱하고 다양한 이미지 최적화 기능을 제공해줌으로써 다수의 이미지를 포함하고 있는 해당 웹 사이트의 초기 로딩 속도를 크게 개선할 수 있었습니다.",
     members: "1인 (개인 프로젝트)",
     period: "2024.05.02 ~ 2024.05.07",
     features: [
