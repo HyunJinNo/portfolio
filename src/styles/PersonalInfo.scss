@@ -1,33 +1,63 @@
 .PersonalInfo {
-  margin-top: 10vw;
+  margin-top: 20vw;
   width: auto;
-  height: 50vw;
 
-  > .title {
+  .title {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     height: 10vw;
 
-    > h1 {
+    h1 {
       margin-left: 1vw;
       font-size: 4vw;
     }
   }
 
-  > .content {
+  .content {
     justify-content: space-around;
     display: flex;
     flex-direction: row;
     height: 35vw;
 
-    > .verticalContent {
+    .verticalContent {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       overflow-x: hidden;
       overflow-y: hidden;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .title {
+      h1 {
+        font-size: 6vw;
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+
+      .verticalContent {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .title {
+      h1 {
+        font-size: 7vw;
+      }
     }
   }
 }

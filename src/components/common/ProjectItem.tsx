@@ -29,7 +29,7 @@ const ProjectItem = ({ project }: MyProps) => {
         <div className="top">
           <FaCaretLeft
             className={`leftArrow ${index <= 0 ? "disabled" : ""}`}
-            size="2vw"
+            size="1.5rem"
             onClick={(e) => onLeft(e)}
           />
           <div className="imageContainer">
@@ -45,7 +45,7 @@ const ProjectItem = ({ project }: MyProps) => {
           </div>
           <FaCaretRight
             className={`rightArrow ${index >= length - 1 ? "disabled" : ""}`}
-            size="2vw"
+            size="1.5rem"
             onClick={(e) => onRight(e)}
           />
         </div>
@@ -61,7 +61,7 @@ const ProjectItem = ({ project }: MyProps) => {
                     target="_blank"
                   >
                     <div className="tag">
-                      <FaCheck size={"1vw"} />
+                      <FaCheck size={"1rem"} />
                       <h4>{`${key}`}</h4>
                     </div>
                     <div className="str">
@@ -74,7 +74,7 @@ const ProjectItem = ({ project }: MyProps) => {
               return (
                 <div className="body" key={key}>
                   <div className="tag">
-                    <FaCheck size={"1vw"} />
+                    <FaCheck size={"1rem"} />
                     <h4>{`${key}`}</h4>
                   </div>
                   <div className="str">

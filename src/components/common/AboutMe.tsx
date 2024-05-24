@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className="AboutMe">
       <div className="title" data-aos="fade-right" data-aos-offset="200">
-        <FaSmile size={"3vw"} />
+        <FaSmile size={"4vw"} />
         <h1>About Me</h1>
       </div>
       <div className="content">

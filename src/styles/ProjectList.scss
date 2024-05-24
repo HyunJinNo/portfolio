@@ -1,5 +1,5 @@
 .ProjectList {
-  margin-top: 10vw;
+  margin-top: 20vw;
   width: auto;
   height: fit-content;
   display: flex;
@@ -26,5 +26,27 @@
     width: 100vw;
     padding-left: 2vw;
     padding-right: 2vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    .title {
+      h1 {
+        font-size: 6vw;
+      }
+    }
+
+    .list {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .title {
+      h1 {
+        font-size: 7vw;
+      }
+    }
   }
 }

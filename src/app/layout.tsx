@@ -19,10 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AOSProvider>
-          {/* <Header /> */}
-          {children}
-        </AOSProvider>
+        <AOSProvider>{children}</AOSProvider>
       </body>
     </html>
   );

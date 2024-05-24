@@ -11,20 +11,18 @@ type MyProps = {
 const PersonalInfoItem = ({ data_aos, icon, title, body, isLink }: MyProps) => {
   if (isLink) {
     return (
-      <div>
-        <a
-          className="PersonalInfoItem"
-          data-aos={data_aos}
-          href={body}
-          target="_blank"
-        >
-          {icon}
-          <div>
-            <h3>{title}</h3>
-            <p>{body}</p>
-          </div>
-        </a>
-      </div>
+      <a
+        className="PersonalInfoItem"
+        data-aos={data_aos}
+        href={body}
+        target="_blank"
+      >
+        {icon}
+        <div>
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </div>
+      </a>
     );
   }
 

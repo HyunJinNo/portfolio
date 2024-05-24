@@ -3,9 +3,9 @@
   width: fit-content;
   height: fit-content;
   color: white;
-  margin: 1vw;
-  padding-top: 3vw;
-  padding-bottom: 1vw;
+  margin: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   border-radius: 8px;
   border: 1px solid white;
 
@@ -19,7 +19,7 @@
   }
 
   .content {
-    padding: 2vw;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,12 +96,12 @@
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            width: 12vw;
+            width: 12rem;
 
             h4 {
               text-transform: capitalize;
               padding-left: 0.5vw;
-              font-size: 1vw;
+              font-size: 1rem;
             }
           }
 
@@ -110,12 +110,87 @@
 
             > p {
               text-align: start;
-              font-size: 1vw;
+              font-size: 1rem;
             }
           }
 
           &:hover {
             background-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: auto;
+
+    & + .ProjectItem {
+      margin: auto;
+      margin-top: 1rem;
+    }
+
+    h2 {
+      font-size: 3.5vw;
+    }
+
+    .content {
+      .top {
+        .imageContainer {
+          width: 75vw;
+          height: 60vw;
+        }
+      }
+
+      .bottom {
+        width: 75vw;
+
+        .info {
+          .body {
+            .tag {
+              width: 20vw;
+
+              h4 {
+                padding-left: 1vw;
+                font-size: 2vw;
+              }
+            }
+
+            .str {
+              width: 70vw;
+
+              > p {
+                font-size: 2vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 4.5vw;
+    }
+
+    .content {
+      .bottom {
+        .info {
+          .body {
+            .tag {
+              width: 40vw;
+
+              h4 {
+                font-size: 3vw;
+              }
+            }
+
+            .str {
+              > p {
+                font-size: 3vw;
+              }
+            }
           }
         }
       }

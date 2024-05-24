@@ -3,26 +3,64 @@
   display: flex;
   justify-content: space-between;
 
-  > .position {
-    margin: 4vw;
+  .position {
+    margin-top: 2rem;
+    margin-left: 2rem;
     border-top: 3px solid white;
+
     h2 {
       color: white;
+      font-size: 2vw;
       text-align: start;
     }
   }
 
-  > .titleGroup {
+  .titleGroup {
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
 
-    > .titleText {
-      margin: 4vw;
-      > h1 {
-        font-size: 8vw;
+    .titleText {
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+
+      h1 {
+        font-size: 7vw;
         color: white;
         text-align: end;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .position {
+      h2 {
+        font-size: 3vw;
+      }
+    }
+
+    .titleGroup {
+      .titleText {
+        h1 {
+          font-size: 8vw;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .position {
+      h2 {
+        font-size: 4vw;
+      }
+    }
+
+    .titleGroup {
+      .titleText {
+        margin-bottom: 8rem;
+
+        h1 {
+          font-size: 9vw;
+        }
       }
     }
   }
